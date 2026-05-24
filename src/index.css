@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg0: #0f0b06;
+  --bg1: #1a1208;
+  --bg2: #231a0a;
+  --bg3: #2e2210;
+  --gold: #C9A84C;
+  --goldL: #FBBF24;
+  --cream: #EDD9A3;
+  --creamD: #9E8B66;
+  --jade: #3DA876;
+  --amber: #E67E22;
+  --red: #C0392B;
+  --border: #3a2c0e;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background: var(--bg0);
+  color: var(--cream);
+  font-family: 'Sarabun', sans-serif;
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@theme inline {
+  --color-bg0: var(--bg0);
+  --color-bg1: var(--bg1);
+  --color-bg2: var(--bg2);
+  --color-bg3: var(--bg3);
+  --color-gold: var(--gold);
+  --color-goldL: var(--goldL);
+  --color-cream: var(--cream);
+  --color-creamD: var(--creamD);
+  --color-jade: var(--jade);
+  --color-amber: var(--amber);
+  --color-red: var(--red);
+  --color-border: var(--border);
+  --font-sarabun: 'Sarabun', sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] { -moz-appearance: textfield; }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg1); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
